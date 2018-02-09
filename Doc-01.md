@@ -4,16 +4,16 @@
 
 - [Table布局-display:table](http://www.css88.com/archives/6308)
 
-  - table：指定对象作为块元素级的表格。类同于html标签<table>（CSS2）
-  - inline-table：指定对象作为内联元素级的表格。类同于html标签<table>（CSS2）
-  - table-caption：指定对象作为表格标题。类同于html标签<caption>（CSS2）
-  - table-cell：指定对象作为表格单元格。类同于html标签<td>（CSS2）
-  - table-row：指定对象作为表格行。类同于html标签<tr>（CSS2）
-  - table-row-group：指定对象作为表格行组。类同于html标签<tbody>（CSS2）
-  - table-column：指定对象作为表格列。类同于html标签<col>（CSS2）
-  - table-column-group：指定对象作为表格列组显示。类同于html标签<colgroup>（CSS2）
-  - table-header-group：指定对象作为表格标题组。类同于html标签<thead>（CSS2）
-  - table-footer-group：指定对象作为表格脚注组。类同于html标签<tfoot>（CSS2）
+  - table：指定对象作为块元素级的表格。类同于html标签`<table>`（CSS2）
+  - inline-table：指定对象作为内联元素级的表格。类同于html标签`<table>`（CSS2）
+  - table-caption：指定对象作为表格标题。类同于html标签`<caption>`（CSS2）
+  - table-cell：指定对象作为表格单元格。类同于html标签`<td>`（CSS2）
+  - table-row：指定对象作为表格行。类同于html标签`<tr>`（CSS2）
+  - table-row-group：指定对象作为表格行组。类同于html标签`<tbody>`（CSS2）
+  - table-column：指定对象作为表格列。类同于html标签`<col>`（CSS2）
+  - table-column-group：指定对象作为表格列组显示。类同于html标签`<colgroup>`（CSS2）
+  - table-header-group：指定对象作为表格标题组。类同于html标签`<thead>`（CSS2）
+  - table-footer-group：指定对象作为表格脚注组。类同于html标签`<tfoot>`（CSS2）
 
 - 几个 es6 的便捷写法：https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b
 
