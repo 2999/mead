@@ -1,5 +1,3 @@
-# Linux系统相关
-
 ### npm scripts
 
 - 参考：http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
@@ -38,6 +36,19 @@
 - 基于ssh keys的登陆验证方式可以避免假冒服务器的问题，因为假冒服务器获取不到你的密匙，它比基于用户名密码的口令方式更安全，但是需要的登陆时间也会更长。
 - 使用OpenSSH为自己生成一对密钥：`$ ssh-keygen`，完成之后，你应该可以在你的.ssh目录下看到两个文件，id_rsa就是你的私钥，而id_ras.pub则是你的公钥
 
+### 关于证书及密钥：
+
+- 前提：https
+- 公钥、私钥、密钥、密钥对、加密密钥、解密密钥、非对称密码、数字签名
+- 公钥加密又称为非对称密码，因为加密密钥和解密密钥不一样。慢
+- 私钥加密又称为对称加密，因为同一密钥既用于加密又用于解密。快
+- 在实际的应用中，人们通常将两者结合在一起使用，例如，对称密钥加密系统用于存储大量数据信息，而公开密钥加密系统则用于加密密钥。
+- RSA算法
+- 安全传输协议：SSL、TLS
+- 证书CA
+- 发送https请求前，浏览器先去查找本地对应证书，如果没有，则拒绝请求提示出错
+- host优先级是最高的
+
 ### 命令行 & 快捷键
 
 - ctrl+A ctrl+E ctrl+w
@@ -45,7 +56,40 @@
 - cd -
 - history 配合 !number
 - grep -n 123 *
-
-
 - Command+Shift+. 可以显示隐藏文件、文件夹，再按一次，恢复隐藏；
-- finder下使用Command+Shift+G 可以前往任何文件夹，包括隐藏文件夹。
+- finder下使用Command+Shift+G 可以前往任何文件夹，包括隐藏文件夹
+- sudo su admin ：转换成admin身份
+- sudo su root：转换成超级管理员身份
+- sudo […] : 临时获取admin权限(在某个账号下使用时)
+- ln -s [sourse] [target] ：符号链接
+- man ln 或 ln —help ：查文档
+- pwd ：查看当前路径
+- touch [fileName]: 新建一个文件
+- exit : 退出admin身份
+- vim：查看或编辑某个文件
+- ls -alh：查看用户对文件的操作权限
+- chmod：修改某用户或组对文件的操作权限（http://www.[cnblogs.com/avril/archive/2010/03/23/1692809.html）](http://cnblogs.com/avril/archive/2010/03/23/1692809.html%EF%BC%89)
+- sudo chmod 777 file ： 置为可读
+- cat package.json | grep version，即可看到模块的版本号。解释：cat package.json 会把 package.的所有内容打印到标准输出，后面跟上|，是一个管道操作，表示把上一条命令的标准输出作为下一条命令的标准输入。即：使用 grep 去查找 cat pacjson 输出的内容里的 version 关键字。也可以用 grep version package.json ，更简单，性能也更好一些。
+- npm list -g --depth=0：查看本地安装的所有的nam模块及版本号，--depth=1可以看1级依赖，依次类推。同理，也可以用tnpm list -g --depth=0
+- [[：移动到文件头
+- ]]：移动到文件尾
+- ctrl+f：向下翻一屏
+- ctrl+b：向上翻一屏
+- ctrl+u：向上滚动半屏
+- ctrl+d：向下滚动半屏
+- $：移动到行尾
+- ^：移动到行首
+- :set nu：设置行号
+- /xxx：查找xxx，按n健查找下一个，按N健查找前一个
+- 复制一行：把光标移动到要复制的行上按yy，把光标移动到要复制的位置按p
+- sudo echo limit maxfiles 100000 100000|sudo tee -a /etc/launchd.conf
+  - restart computer
+- tnpm root -g
+- cd `npm root -g`
+- /Users/与/usr/；/usr/local/bin、/usr/local/lib；/usr/lib
+- shell中command + k
+- 查看某类本地进程：ps -ef | grep node
+- 杀死某个进程：sudo kill -9 11808
+- command + shift + v：mac去格式粘贴；
+- Command + L：mac如何使用快捷键将 Chrome 浏览器光标定位到地址栏；

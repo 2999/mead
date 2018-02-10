@@ -42,6 +42,22 @@
 
 - [结构化克隆算法](https://developer.mozilla.org/zh-CN/docs/Web/Guide/API/DOM/The_structured_clone_algorithm) 与 JSON 序列化对比
 
+### sass 、compass
+
+- sass : http://www.w3cplus.com/sassguide/
+- compass : http://www.ruanyifeng.com/blog/2012/11/compass.html
+- Compass用法指南 : http://www.ruanyifeng.com/blog/2012/11/compass.html
+- 使用Sass和Compass制作雪碧图：http://www.w3cplus.com/preprocessor/intermediate/spriting-with-sass-and-compass.html
+- Compass重置模块位于样式表的前边，只要被引入就会执行global-reset这一混合器:http://www.ituring.com.cn/tupubarticle/713
+- 图灵社区：<http://www.ituring.com.cn/tupubarticle/713>
+- <http://www.cnblogs.com/laayoune/p/4105415.html>
+- <https://ruby-china.org/topics/4396>
+- How to structure a Sass project : <http://thesassway.com/beginner/how-to-structure-a-sass-project>
+- e.g.《[Sass Twitter Bootstrap](https://github.com/jlong/sass-twitter-bootstrap/tree/master/lib)》
+- e.g.《[Breakpoint](https://github.com/lesjames/breakpoint/tree/master/breakpoint)》
+- e.g.《[Octopress](https://github.com/imathis/octopress/tree/master/.themes/classic/sass)》
+- Sass Guidelines之一、二、三…：<http://www.w3cplus.com/preprocessor/sass-guidelin-part-1.html>
+
 ### Node
 
 - exports 和 module.exports 的区别：
@@ -138,6 +154,7 @@ Android平台Webview和JS的交互方式共有三种:
 ### Other
 
 - [《Koa2进阶学习笔记》](https://chenshenhai.github.io/koa2-note/)
+
 - cjs-to-es6
 - 安装 .ipa 到 simulator：1、xcode-select —install；2、xcrun simctl install booted xxx
 - Weinre 全称 **We**b **In**spector **Re**mote
@@ -147,3 +164,17 @@ Android平台Webview和JS的交互方式共有三种:
   - 源于业务并高于业务的沉淀，业务与技术相结合的深度
   - 技术沉淀：每周周末坚持沉淀自己
   - 博客：https://github.com/Aaaaaaaty/blog
+
+- git cz 类型说明：
+  - feat: 新功能(feature)
+  - fix: 修复缺陷
+  - docs: 仅文档更新
+  - style: 不影响代码含义的变更，如空格、格式化、漏掉分号等
+  - refactor: 重构，并未修复缺陷或添加功能
+  - perf: 性能(performance)提升
+  - test: 补充测试用例
+  - chore: 改进构建过程或辅助工具，例如文档生成工具
+
+- 在浏览器上做代理的两种方式：
+  - webrequestblocking，修改请求，devtool中见到的是修改后的请求
+  - pack代理，通过系统的代理协议，不修改请求，devtool中可见到原请求
