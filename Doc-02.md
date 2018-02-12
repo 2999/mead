@@ -17,6 +17,8 @@
 
 - 几个 es6 的便捷写法：https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b
 
+- 非常有用的 48 个 JavaScript 代码片段：https://juejin.im/entry/5a791567f265da4e8e7842a2
+
 - Array.map方法是并发执行的：
 
   ```
@@ -150,6 +152,10 @@ Android平台Webview和JS的交互方式共有三种:
 
 
 - 块存储、文件存储、对象存储这三者的本质差别是什么？：https://www.zhihu.com/question/21536660
+
+### iOS & Android
+
+- 写给前端看的 iOS 梳理 (上)：https://juejin.im/entry/5a7c1e39f265da4e8c44f80a
 
 ### Other
 
